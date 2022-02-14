@@ -71,6 +71,7 @@ form textarea{
     border:none;
     border-radius:5px;
     background-color: rgb(226, 135, 226);
+    resize:none;
     color:white;
     font-size:16px;
 }
