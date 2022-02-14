@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/style.css" rel = "stylesheet">
+    <title>Formulário contato</title>
+</head>
+<body>
+    <main>
+        <form id = "tipsForm">
+            <h1 class = "titulo">Contate-nos</h1>
+
+            <section class = "primeira-secao">
+                <div class="elementos">
+                    <label for = "nome">Nome</label>
+                    <input type = "text" name = "nome" id = "nome" placeholder = "Exemplo: Alan">
+                </div>
+                <div class = "sub-elementos">
+                    <label for = "sobrenome">Sobrenome</label>
+                    <input type = "text" name = "sobrenome" id = "sobrenome" placeholder = "Oliveira">
+                </div>
+            </section>
+
+            <section class = "segunda-secao">
+                <div class = "elementos">
+                    <label for = "email">Email</label>
+                    <input type = "email" name = "email" id = "email"  placeholder = "Exemplo: fulano@gmail.com">
+                </div>
+                <div class = "sub-elementos">
+                    <label for = "telefone">Telefone</label>
+                    <input type = "tel" name = "telefone" id = "telefone" placeholder = "Exemplo: (11)99999-9999" maxlength = 14 onkeypress ="mascara_numero()">
+                </div>
+            </section>
+
+            <section class = "terceira-secao">
+                <label for = "mensagem">Mensagem</label>
+                <textarea row="6" name = "mensagem" id = "mensagem" placeholder = "Digite sua mensagem aqui..."></textarea>
+            </section>
+            
+            <div class="edit-botao">
+                <input type="submit" value="Enviar" class = "botao">
+            </div>
+        </form>
+    </main>
+    <script src = "script.js"></script>
+    
+</body>
+</html>
